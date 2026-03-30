@@ -1,4 +1,5 @@
 # Natural_disasters_quantization
+# (●'◡'●) Edge AI Model Optimization using ONNX
 This project focuses on building and optimizing deep learning models for Edge AI deployment, with an emphasis on low-latency inference, reduced memory usage, and privacy-preserving on-device computation.
 
 # Project Overview
@@ -43,15 +44,13 @@ Load or train a deep learning model (e.g., object detection or classification)
 
 Convert trained model → ONNX format
 
+``` 
 torch.onnx.export(model, dummy_input, "model.onnx")
+```
 
 3️⃣ Model Optimization (Quantization)
 
-Apply quantization to reduce:
-
-Model size
-
-Inference time
+Apply quantization to reduce: Model size, Inference time
 
 Compare FP32 vs INT8 models
 
@@ -59,19 +58,17 @@ Compare FP32 vs INT8 models
 
 Run inference using ONNX Runtime:
 
+```
 import onnxruntime as ort
-
+```
+```
 session = ort.InferenceSession("model.onnx")
-
+```
 5️⃣ Benchmarking
 
 Measure:
 
-Latency
-
-Accuracy
-
-Memory footprint
+Latency, Accuracy, Memory footprint
 # 📊 Results & Insights
 
 Quantized models significantly reduce model size and inference latency
@@ -112,14 +109,22 @@ Enables secure and efficient AI systems
 # ▶️ How to Run
 
 Clone the repository
-git clone <your-repo-link>
+```
+git clone 'https://github.com/Starlight0000/Natural_disasters_quantization'
+```
+
+```
 cd repo-name
+```
 
 Install dependencies
+```
 pip install -r requirements.txt
-
+```
 Run the notebook
+```
 jupyter notebook quantization.ipynb
+```
 # 🌱 Future Work
 Deploy using TensorFlow Lite
 
@@ -132,6 +137,8 @@ Explore pruning + distillation
 
 Sri Harshitha Sajja
 AI Graduate | Edge AI Enthusiast
+
+
 
 ⭐ If you found this useful
 
